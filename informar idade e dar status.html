@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Idade x status </title>
+
+</head>
+<body>
+    <!--If (n<=0 && n<15) Status: "Criança"-->
+    <!--If (n>=15 && n<30) Status: "Jovem"-->
+    <!--If (n>=30 && n<60) Status: "Adulto"-->
+    <!--If (n>=60) Status: "Idoso"-->
+
+    <script>
+  function idade (){
+    var ok =false;
+    while(!ok)
+    {
+
+   var num = prompt("Informe a sua idade: ")
+
+   if (num>=0 && num<15)
+   {
+    alert("CRIANÇA");
+    ok=true
+   }
+    else if (num>=15 && num<30)
+   {
+    alert("JOVEM");
+    ok=true
+   }
+   else if (num>=30 && num<60)
+   {
+    alert("ADULTO");
+    ok=true
+   }
+   else if (num>=60)
+   {
+    alert ("IDOSO");
+    ok=true
+   }
+   else
+   {
+    alert ("CARACTERE NÃO VÁLIDO, DIGITE UM NÚMERO!")
+   }
+  }
+}
+   idade()
+
+   </script>
+</body>
+</html>
